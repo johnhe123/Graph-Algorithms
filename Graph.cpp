@@ -3,13 +3,6 @@
 #include <sstream>
 #include "Graph.h"
 
-
-/*int main() {
-
-    return 0;
-}*/
-
-
  Graph& Graph::add_edge(int src, int tgt, float wt, bool replace) {
     std::vector<Edge>::iterator itr, itr_end;
     bool found = false;
