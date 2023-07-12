@@ -7,43 +7,6 @@
 #include <functional>
 #include "Graph_Algorithms.h"
 
-/*
-int main() {
-    Graph g1;
-    std::vector<int> path;
-    float path_length = 0.0;
-    size_t source = 0;
-    size_t dest = 0;
-
-   g1.add_edge(0, 1, 3);
-   g1.add_edge(0, 2, 2);
-   g1.add_edge(1, 3, 1);
-
-   g1.add_edge(1, 4, 3);
-   g1.add_edge(2, 3, 2);
-   g1.add_edge(2, 4, 18);
-   g1.add_edge(3, 5, 2);
-
-   g1.add_edge(4, 5, 2);
-
-    std::cout << g1.to_string() << std::endl;
-
-
-    //Gx::prune_unreachables(g1, 0);
-    //std::cout << g1.to_string() << std::endl;
-    //std::cout << "path length: " << Gx::get_shortest_unweighted_path(g1, 0, 6, path) << std::endl;
-
-    std::cout << "max flow: " << Gx::get_max_flow(g1, 0, 5) << std::endl;
-
-
-    //std::cout << "\npath length: " << path_length;
-
-    std::cout << std::endl;
- 
-   
-    return 0;
-}
-*/
 
 float Gx::_get_capacity_of_this_path(const Graph &g, const std::vector<int> &path) {
     std::priority_queue<float> capacities;
